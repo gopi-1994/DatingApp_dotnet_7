@@ -1,0 +1,15 @@
+<h4>Internal server error- Reload to clear it</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">Note: its probaly server error</p>
+    <p>what to do next</p>
+    <ol>
+        <li>open inspect check in network tab for failing requests</li>
+        <li>check the API endpoints</li>
+        <li>check the api in postman </li>
+    </ol>
+    <p style="font-weight: bold;">check the  stack trace for the errors in the below code</p>
+    <code class="mt-5" style="background-color: black; color: lightgreen; ">
+    {{error.details}}
+    </code>
+</ng-container>
