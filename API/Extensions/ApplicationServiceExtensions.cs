@@ -19,6 +19,8 @@ public static class ApplicationServiceExtensions
         // builder.Services.AddSwaggerGen();
         services.AddCors();
         services.AddScoped<ITokenServices, TokenService>();
+        services.AddScoped<IUserRepository,UserRepository>();
+        services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());//assembles DTO appusers & member DTO check >helpers> AutopMapperProfiles
         return services;
     }
 }
