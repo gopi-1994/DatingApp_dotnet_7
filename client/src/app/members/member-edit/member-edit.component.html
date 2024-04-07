@@ -39,7 +39,7 @@
             <tab heading="About {{member.knownAs}}">
                 <form #editForm="ngForm" (ngSubmit)="updateMember()" id="editForm">
                     <h4 class="mt-2">Description</h4>
-                    <textarea name="information" class="form-control" [(ngModel)]="member.information"
+                    <textarea name="introduction" class="form-control" [(ngModel)]="member.introduction"
                         rows="6"></textarea>
                     <h4 class="mt-2">Looking for</h4>
                     <textarea name="lookingFor" class="form-control" [(ngModel)]="member.lookingFor"
