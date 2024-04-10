@@ -24,6 +24,7 @@ public static class ApplicationServiceExtensions
         services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());//assembles DTO appusers & member DTO check >helpers> AutopMapperProfiles
         services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));// gets the Cloudinarysettings from appsettings.jsonn
         services.AddScoped<IphotoService, PhotoService>(); //StartupBase photouplpoad & DeleteBehavior methods
+        services.AddScoped<LogUserActivity>();
 
         return services;
     }

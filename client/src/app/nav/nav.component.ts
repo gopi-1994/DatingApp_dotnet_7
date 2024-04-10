@@ -26,7 +26,7 @@ export class NavComponent implements OnInit {
       // console.log(response);
       
     })
-    console.log(this.model);
+    // console.log(this.model);
   }
   logout() {
     this.accountService.logout();
