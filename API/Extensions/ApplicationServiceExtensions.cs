@@ -25,6 +25,7 @@ public static class ApplicationServiceExtensions
         services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));// gets the Cloudinarysettings from appsettings.jsonn
         services.AddScoped<IphotoService, PhotoService>(); //StartupBase photouplpoad & DeleteBehavior methods
         services.AddScoped<LogUserActivity>();
+        services.AddScoped<ILikesRepository,LikesRepository>();
 
         return services;
     }
